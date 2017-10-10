@@ -17,5 +17,5 @@ while True:
 	print ("Received: ", msg)
 	if msg == expectedMSG:
 		print("Message authenticated... returning html response")
-		clientsocket.send("<!DOCTYPE html><html><body><h1> Hello, World </h1></body></html>".encode())
+		clientsocket.send("TCP Hello World".encode())
 	clientsocket.close()
